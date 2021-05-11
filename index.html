@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de criptografía</title>
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="box" id="boxPrincipal">
+            <h1>Ejercicio de criptografía</h1>
+            <h2>Realizado por:</h2>
+            <h3>Pedro Luis Alcedo Andrade</h3>
+            <h3>1938415</h3>
+            <h3>Seguridad y criptografía - Jueves N1</h3>
+            <div class="opciones">
+                <button id="btnEncriptar">Encriptar</button>
+                <button id="btnDesencriptar">Desencriptar</button>
+            </div>
+        </div>
+
+        <div class="info">
+            <button id="btnInfo"><i class="fas fa-info"></i></button>
+            <button id="btnBack"><i class="fas fa-hand-point-left"></i></button>
+        </div>
+
+        <div id="explicacion" class="box">
+            <p>La encriptación para este proyecto consiste en cambiar las letras del mensaje por su par contrario, es decir, A pasa a ser Z, B pasa a ser Y, C pasa a ser X... (Con el caso especial de la Ñ que pasa a ser 0)</p>
+            <p>Así sucesivamente y de forma inversa, para encriptar un mensaje presiona el botón Encriptar en la pestaña principal, y para desencriptar uno presiona el botón Desencriptar.</p>
+            <p>Para volver a la página principal vuelve a presionar el botón de la esquina inferior izquierda</p>
+        </div>
+
+        <div id="encriptar" class="box">
+            <form action="">
+                <label for="">Mensaje a encriptar</label>
+                <input type="text" id="inputMensajeE">
+            </form>
+            <button class="btnEnviar" id="btnEnviarE">Enviar</button>
+            <div id="mensajeEncriptado">
+
+            </div>
+        </div>
+
+        <div id="desencriptar" class="box">
+            <form action="">
+                <label for="">Mensaje a desencriptar</label>
+                <input type="text" id="inputMensajeD">
+            </form>
+            <button class="btnEnviar" id="btnEnviarD">Enviar</button>
+            <div id="mensajeDesencriptado">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/bd4bac141d.js" crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
